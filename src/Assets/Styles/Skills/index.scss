@@ -1,0 +1,91 @@
+@mixin  flex ($just, $align, $dir : row){
+    display: flex;
+    flex-direction: $dir;    
+
+    @if($dir == column){
+        justify-content: $align;
+        align-items: $just;
+    }        
+    @else{
+        justify-content: $just;
+        align-items: $align;
+    }
+}
+
+.skills--section{
+    width: 99vw;
+    height: 90vh;
+    background: #dedede;
+    // padding: 4rem 20rem;
+}
+
+
+.skills__title{
+    text-align: center;
+    background: chartreuse;
+    
+}
+
+.skills-container{
+    @include flex(initial, initial );    
+    width: 65vw;    
+    margin: auto;
+    margin-top: 4rem;    
+}
+
+// containing the the Technologies Components div
+.skills-container > div{    
+    width: 100%
+}
+
+// domains container (icon, domain, arrow) -> frontend ,Backend etc.
+.domainSkill--title{
+    @include flex(space-between,center );
+    // border:2px solid ;
+    margin: .4rem;
+    // text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    // background: blue;
+        
+}
+
+.domainSkill--title > div{
+    @include flex(initial, center );
+}
+
+
+.domain--icon{
+    margin-right: 1rem;
+    font-size: 2.2rem;
+}
+
+.domainSkill--title:hover{    
+    cursor: pointer;
+}
+// skills with the bars 
+.domain--skills--box{
+    // background-color: red;
+    padding: 1rem 0.5rem 1rem 3rem;    
+}
+
+
+.bars--section{
+    // @include flex(center, center );
+    // background: #aa11dd;    
+    width: inherit;
+    font-size: 1.2rem;
+
+    p{
+        margin: 0%;
+    }
+}
+.bars--section >  p{    
+    padding-top: 1.5rem;
+    padding-bottom: .5rem;
+}
+.bars--section > div{    
+        background-color: rgba($color: #6a72fc, $alpha: .4);
+        width: inherit;
+        height: .45rem;            
+}

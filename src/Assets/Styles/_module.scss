@@ -1,0 +1,18 @@
+@mixin  flex ($just, $align, $dir : row){
+    display: flex;
+    flex-direction: $dir;
+    background-color: yellow;
+
+    @if($dir == column){
+        justify-content: $align;
+        align-items: $just;
+    }        
+    @else{
+        justify-content: $just;
+        align-items: $align;
+    }
+}
+
+@mixin  back {
+    background-color: yellow;
+}

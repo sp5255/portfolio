@@ -1,0 +1,102 @@
+.skills--section {
+  width: 99vw;
+  height: 90vh;
+  background: #dedede;
+}
+
+.skills__title {
+  text-align: center;
+  background: chartreuse;
+}
+
+.skills-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
+  -webkit-box-align: initial;
+      -ms-flex-align: initial;
+          align-items: initial;
+  width: 65vw;
+  margin: auto;
+  margin-top: 4rem;
+}
+
+.skills-container > div {
+  width: 100%;
+}
+
+.domainSkill--title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: .4rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.domainSkill--title > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.domain--icon {
+  margin-right: 1rem;
+  font-size: 2.2rem;
+}
+
+.domainSkill--title:hover {
+  cursor: pointer;
+}
+
+.domain--skills--box {
+  padding: 1rem 0.5rem 1rem 3rem;
+}
+
+.bars--section {
+  width: inherit;
+  font-size: 1.2rem;
+}
+
+.bars--section p {
+  margin: 0%;
+}
+
+.bars--section > p {
+  padding-top: 1.5rem;
+  padding-bottom: .5rem;
+}
+
+.bars--section > div {
+  background-color: rgba(106, 114, 252, 0.4);
+  width: inherit;
+  height: .45rem;
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+$nav--color : #ffffff;
+$temp--color : #1133ff;
+$link-color : #7164dc;
+
+@mixin  flex ($just, $align, $dir : row){
+    display: flex;
+    flex-direction: $dir;
+
+    @if($dir == column){
+        justify-content: $align;
+        align-items: $just;
+    }        
+    @else{
+        justify-content: $just;
+        align-items: $align;
+    }
+}
+
+nav{
+    @include flex(space-between,center  );    
+    width: 99vw;
+    background: $nav--color;
+    padding: 0rem 12rem;
+    
+    letter-spacing: .02rem;
+    position: sticky;
+    top: 0rem;
+    z-index: 2;
+    border-bottom: 1px solid rgba($color: #000000, $alpha: .3);
+}
+
+.nav--menu{
+    @include flex(initial,center);
+
+    ul{
+        margin:1rem 0rem;
+    }
+
+    li{
+        display: inline;
+        margin-right: 1.5rem;
+    }
+
+    li:hover{
+        cursor: pointer;
+    }
+
+    a{
+        text-decoration: none;
+        color: black;
+    }   
+
+    a.active{
+        color: $link-color;        
+    }
+
+}
+.modes--icon img{
+    width:1.5rem;
+    cursor: pointer;    
+}
