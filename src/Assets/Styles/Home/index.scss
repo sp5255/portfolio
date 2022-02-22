@@ -1,109 +1,144 @@
-$primary--color:hsl(266,69%,56%);
-$primary--color:#8441dc;
+// $primary--color:hsl(266,69%,56%);
+// $primary--color:#8441dc;
+// $app--color :#6a72fc ;
 
-$app--color :#6a72fc ;
+$main--color: #6256bf;
 
-@mixin  flex ($just, $align, $dir : row){
+@mixin flex($just, $align, $dir: row) {
     display: flex;
     flex-direction: $dir;
 
-    @if($dir == column){
+    @if ($dir == column) {
         justify-content: $align;
         align-items: $just;
-    }        
-    @else{
+    } @else {
         justify-content: $just;
         align-items: $align;
     }
 }
 
-.home--section{
-    @include flex(initial,initial  );    
+.home--section {
+    @include flex(initial, initial);
     height: 95vh;
     width: 75vw;
-    // padding:0rem 5rem;
-    // background: yellow;
-    div{
-        // background: skyblue    ;
-    }
+    margin: auto;
 }
 
 .home__icons {
-    @include flex(center,center ,column);
-    // background: red;
-    // background: #efefef;
-    // flex: 1;    
-    // margin-bottom: 2rem;
-    padding: 1rem;
+    @include flex(center, center, column);
+    // background-color: red;
+    color: $main--color;
+    font-size: 2rem;
+    // padding: 2rem;
     margin-right: 1rem;
-    img{
-        max-width: 2.5rem;
-        margin-bottom: 1rem;        
+
+    i {
+        margin: 1rem;
     }
-    
 }
-.home__content{
+
+// welcome message and about me
+.home__content {
+    @include flex(initial, space-around, column);
     flex: 2;
-    // background: #dedede;
-    padding-top: 10rem;
-    // word-break: break-all;
+    padding-top: 9rem;
+    padding-bottom: 7rem;
+    // background-color: red;
 
-    
-    h1{
-        font-size: 3rem;      
-        // height: 3rem  ;        
+    h1 {
+        font-size: 3rem;
+        // height: 3rem  ;
     }
 
-      .content__p{
-          margin-top: 3rem;
-          line-height: 1.6rem;
-          font-size: 1.1rem                
-      }
+    .content__p {
+        // margin-top: 3rem;
+        line-height: 1.6rem;
+        font-size: 1.1rem;
+    }
 }
 
-.home__content >div:nth-child(1){
-    // background: red;
+.home__content .footer {
+    width: fit-content;    
+    
+    a {
+        @include flex(initial, center);
+        // background: yellow;        
+        text-decoration: none;            
+        margin-top: 4rem;
+        color: $main--color;        
+    }
+
+    a :hover {        
+        cursor: pointer;     
+    }
+
+    i {
+        font-size: 2rem;        
+    }
+
+    transition: all .2s;
+}
+
+
+.home__content .footer:hover{
+    transform: translateY(4px);
+}
+// welcome message and title
+.home__content > div:nth-child(1) {
     height: 8rem;
 }
-#Contact_me{
-    @include flex(center,center );
 
-    background:$app--color;
-    color: white;    
+//button
+#Contact_me {
+    background-color: $main--color;
+    color: white;
+
+    display: flex;
+    align-items: center;
+
+    width: fit-content;
+    padding: 1.2rem 1rem;
+    // margin-top: 5rem;
+
     border: none;
     outline: none;
-    padding: 1.2rem 1rem;
+
     font-size: 1.2rem;
-    margin-top: 5rem;
-    img{
-        transform: rotate(45deg);
-        max-width: 2rem;
+    border-radius: 0.3rem;
+
+    transition: all 0.2s;
+
+    i {
+        margin: 0rem 0.5rem;
     }
 }
 
-.home__profile{
+#Contact_me:hover {
+    cursor: pointer;
+    transform: translateY(2px);
+}
+
+//right photo container
+.home__profile {
     // @include flex(center,flex-start  );
     flex: 2;
     position: relative;
-    // background: hsl(0, 0%, 87%);    
-    // padding-right:10rem;
-    img{
-        max-width: 60%;      
-        // background: yellow;                  
-        // margin-top: 10rem;        
+
+    img {
+        max-width: 60%;
     }
 }
 
-.home__profile > div{
-    background: red;
-    transform: translate(3rem,10rem);
+.home__profile > div {
+    // background: red;
     position: relative;
+    transform: translate(3rem, 10rem);
     // @include flex(flex-start, center );
 }
 
-.profilePic{    
+.profilePic {
     position: absolute;
-    max-height: 70%;    
-    left: 4rem;    
+    max-height: 70%;
+    left: 4rem;
     top: 3rem;
 }

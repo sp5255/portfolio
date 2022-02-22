@@ -1,12 +1,11 @@
 .skills--section {
   width: 99vw;
   height: 90vh;
-  background: #dedede;
 }
 
 .skills__title {
   text-align: center;
-  background: chartreuse;
+  padding: 4rem 0rem;
 }
 
 .skills-container {
@@ -25,7 +24,7 @@
           align-items: initial;
   width: 65vw;
   margin: auto;
-  margin-top: 4rem;
+  margin-top: 5rem;
 }
 
 .skills-container > div {
@@ -95,7 +94,7 @@
 }
 
 .bars--section > div {
-  background-color: rgba(106, 114, 252, 0.4);
+  background-color: rgba(98, 86, 191, 0.4);
   width: inherit;
   height: .45rem;
 }

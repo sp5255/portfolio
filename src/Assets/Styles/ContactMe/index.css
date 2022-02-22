@@ -1,0 +1,115 @@
+.contact--section {
+  background-color: yellow;
+}
+
+.contact--container {
+  padding: 4rem 0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact--section > .title {
+  text-align: center;
+  padding: 4rem 0rem;
+}
+
+.contact--sideCard {
+  margin: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact--sideCard label {
+  display: block;
+}
+
+.contact--icon {
+  font-size: 2.5rem;
+  color: #6256bf;
+}
+
+.contact--details,
+.contact--icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0.3rem;
+}
+
+.contact--details label:nth-child(1) {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.contact--details label:nth-child(2) {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.d-inline {
+  display: inline-block;
+}
+
+[type="tel"],
+textarea {
+  width: calc(100% - 2rem);
+}
+
+textarea {
+  height: 10rem;
+}
+
+.i--style input,
+textarea {
+  background-color: #e6e6e6;
+  margin: 1rem;
+  padding: 1rem 1.5rem;
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.submit--btn {
+  background-color: #6256bf;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+  border-radius: 0.3rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.submit--btn input {
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.submit--btn:hover {
+  cursor: pointer;
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+/*# sourceMappingURL=index.css.map */

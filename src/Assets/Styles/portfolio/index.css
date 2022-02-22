@@ -1,12 +1,23 @@
 .portfolio--container {
-  background-color: yellow;
-  padding: 3rem;
+  padding-bottom: 5rem;
 }
 
 .portfolio--container .mySwiper {
-  height: 24rem;
-  width: 40vw;
-  background-color: #efefef;
+  width: 75vw;
+  height: 40vh;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.portfolio--container .title {
+  text-align: center;
+  padding: 4rem 0rem;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #6256bf;
+  font-weight: bolder;
 }
 
 .swiper-slide {
@@ -20,5 +31,46 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.card {
+  background: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: none;
+}
+
+.p__details,
+.p__img--container {
+  height: 100%;
+  margin: 1rem;
+}
+
+.p__img--container {
+  padding: 3rem 1rem;
+  width: 40%;
+}
+
+.p__img--container img {
+  border-radius: 0.5rem;
+  max-width: 100%;
+}
+
+.p__details {
+  width: 30%;
+  margin-top: 3.5rem;
+}
+
+.p__details label {
+  font-size: 1.4rem;
+  font-weight: 700;
 }
 /*# sourceMappingURL=index.css.map */

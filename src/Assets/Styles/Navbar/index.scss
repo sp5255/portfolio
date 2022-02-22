@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 $nav--color : #ffffff;
-$temp--color : #1133ff;
-$link-color : #7164dc;
+// $temp--color : #1133ff;
+// $link-color : #7164dc;
+$main--color: #6256bf;
 
 @mixin  flex ($just, $align, $dir : row){
     display: flex;
@@ -20,7 +21,7 @@ $link-color : #7164dc;
 
 nav{
     @include flex(space-between,center  );    
-    width: 99vw;
+    max-width: 99vw;
     background: $nav--color;
     padding: 0rem 12rem;
     
@@ -53,7 +54,7 @@ nav{
     }   
 
     a.active{
-        color: $link-color;        
+        color: $main--color;        
     }
 
 }

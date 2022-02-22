@@ -13,7 +13,7 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 99vw;
+  max-width: 99vw;
   background: #ffffff;
   padding: 0rem 12rem;
   letter-spacing: .02rem;
@@ -59,7 +59,7 @@ nav {
 }
 
 .nav--menu a.active {
-  color: #7164dc;
+  color: #6256bf;
 }
 
 .modes--icon img {

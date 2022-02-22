@@ -1,0 +1,57 @@
+@mixin flex($just, $align, $dir: row) {
+    display: flex;
+    flex-direction: $dir;
+
+    @if ($dir == column) {
+        justify-content: $align;
+        align-items: $just;
+    } @else {
+        justify-content: $just;
+        align-items: $align;
+    }
+}
+
+.footer--section {
+    // background-color: #6a72fc;
+    @include flex(space-between, initial);
+
+    background-color: #6256bf;
+    color: white;
+
+    padding: 5rem 8rem;
+    height: 40vh;
+}
+
+.footer--section .name {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.footer--section .title {
+    font-weight: 400;
+}
+
+.footer--section a {
+    text-decoration: none;
+    font-size: 1.2rem;
+
+    color: white;
+
+    margin: 1rem;
+}
+
+.footer--section .mid--section {
+    @include flex(center, space-between, column);
+
+    i {
+        margin: 0rem 0.5rem;
+    }
+}
+
+.footer--section > .icons {
+    a {
+        width: fit-content;
+        font-size: 1.5rem;
+    }
+}

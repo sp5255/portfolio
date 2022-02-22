@@ -1,0 +1,106 @@
+$input--color: #e6e6e6;
+// $main--color: #6a72fc;
+$main--color: #6256bf;
+
+.contact--section{
+    background-color: yellow;
+    // padding: 4rem ;
+}
+
+.contact--container {
+    padding: 4rem 0rem;
+    display: flex;
+    justify-content: center;
+}
+
+.contact--section > .title{
+    text-align: center;
+    // background-color: red;
+    padding: 4rem 0rem;
+}
+
+// contact card component
+.contact--sideCard {
+    margin: 1rem;
+    display: flex;
+    label {
+        display: block;
+    }
+}
+
+.contact--icon {
+    font-size: 2.5rem;
+    color: $main--color;
+}
+
+.contact--details,
+.contact--icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.3rem;
+}
+
+.contact--details label:nth-child(1) {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.contact--details label:nth-child(2) {
+    color: rgba($color: #000000, $alpha: 0.7);
+}
+
+// 1st 2 fields of form
+.d-inline {
+    display: inline-block;
+}
+
+[type="tel"],
+textarea {
+    width: calc(100% - 2rem);
+}
+
+textarea {
+    height: 10rem;
+}
+
+.i--style input,
+textarea {
+    background-color: $input--color;
+
+    margin: 1rem;
+    padding: 1rem 1.5rem;
+
+    outline: none;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.submit--btn {
+    background-color: $main--color;
+    color: white;
+
+    display: flex;
+    align-items: center;
+
+    width: fit-content;
+    margin: 1rem;
+    padding: 1rem;
+
+    font-size: 1.2rem;
+    border-radius: 0.3rem;
+
+    transition: all 0.2s;
+
+    input {
+        color: inherit;
+        background: none;
+        border: none;
+        outline: none;
+    }
+}
+
+.submit--btn:hover {
+    cursor: pointer;
+    transform: translateY(2px);
+}

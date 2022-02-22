@@ -20,13 +20,14 @@ class Navbar extends Component {
 
 
   render() {
-    const { nav_menu } = this.props;
+    const { name, nav_menu } = this.props;
     // console.log(this.state)
     const mode = (this.state.isDarkMode) ? lightMode : darkMode ;
     console.log(nav_menu);
+
     return (
       <nav>
-        <div>Name</div>
+        <div>{name}</div>
         <div className="nav--menu">
           <ul>            
             {nav_menu.map((value , ind) => {
@@ -39,7 +40,7 @@ class Navbar extends Component {
                     activeClass="active"
                     smooth={true}
                     spy={true}
-                    duration={500}
+                    duration={50}
                   >
                     {value}
                   </Link>

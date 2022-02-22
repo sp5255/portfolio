@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -7,45 +7,57 @@ import "swiper/css/bundle";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import '../../Assets/Styles/portfolio/index.css'
-
+import "../../Assets/Styles/portfolio/index.css";
 
 // import required modules
-import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
-import img from '../../Assets/images/IMG_20210824_175141-removebg-preview.png';
-
+import { Navigation, Pagination} from "swiper";
+import todo from "../../Assets/images/Screenshot from 2022-02-21 11-02-50.png";
+import visualizer from "../../Assets/images/Screenshot from 2022-02-21 11-11-26.png";
+import Card from "./Card";
 
 function Portfolio() {
-  return (
-    <div className = "portfolio--container">
-      <div>
+    const details = "Some Details";
+    return (
+        <div className="portfolio--container" id="Portfolio">
 
-      </div>
-        <Swiper
-        slidesPerView={1}
-        spaceBetween={30}
-        loop={true}
-        pagination={{
-          clickable: true,
-        }}
-        navigation={true}
-        modules={[Pagination, Navigation]}
-        className="mySwiper"
-      >
-        <SwiperSlide>
-          <img src={img} />
-        </SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>        
-      </Swiper>
-    </div>
-  );
+            <div className="title">
+                <h2>Portfolio</h2>
+            </div>
+            
+
+            <Swiper
+                slidesPerView={1}
+                spaceBetween={30}
+                loop={true}
+                pagination={{
+                    clickable: true,
+                }}
+                navigation={true}
+                modules={[Pagination, Navigation]}
+                className="mySwiper"
+            >
+                <SwiperSlide>
+                    <Card
+                        src={todo}
+                        alt="todo"
+                        title="Todo in React Js"
+                        details={details}
+                        href="#"
+                    />
+                </SwiperSlide>
+
+                <SwiperSlide>
+                    <Card
+                        src={visualizer}
+                        alt="visualizer"
+                        title="visualizer"
+                        details={details}
+                        href="#"
+                    />
+                </SwiperSlide>
+            </Swiper>
+        </div>
+    );
 }
 
 export default Portfolio;
