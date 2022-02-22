@@ -36,11 +36,11 @@ class Navbar extends Component {
                 <li key={ind}>
                   <Link
                     to={value}
-                    offset={-100}
+                    // offset={-100}
                     activeClass="active"
                     smooth={true}
                     spy={true}
-                    duration={50}
+                    duration={400}
                   >
                     {value}
                   </Link>

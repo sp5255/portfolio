@@ -5,12 +5,19 @@ class ContactForm extends React.Component {
         return (
             <div className="contact--form--section">
                 <form>
-                    <div className="d-inline i--style">
-                        <input type="text" name="name" placeholder="Name" />
+                    <div className="d-inline">
+                        <div className="i--style">
+                            <input type="text" name="name" placeholder="Name" />
+                        </div>
+                        <div className="i--style">
+                            <input
+                                type="email"
+                                name="email"
+                                placeholder="Email"
+                            />
+                        </div>
                     </div>
-                    <div className="d-inline i--style">
-                        <input type="email" name="email" placeholder="Email" />
-                    </div>
+
                     <div className="i--style">
                         <input
                             type="tel"
@@ -24,7 +31,7 @@ class ContactForm extends React.Component {
 
                     <div className="i--styl submit--btn">
                         <input type="submit" value="Send Message" />
-                        <i class="uil uil-message"></i>
+                        <i className="uil uil-message"></i>
                     </div>
                 </form>
             </div>

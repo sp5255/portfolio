@@ -8,6 +8,15 @@
   padding: 4rem 0rem;
 }
 
+.skills__title label {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.skills--section p {
+  margin: 0%;
+}
+
 .skills-container {
   display: -webkit-box;
   display: -ms-flexbox;

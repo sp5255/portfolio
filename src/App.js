@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Navbar from "./Components/Navbar/Navbar";
@@ -8,7 +8,7 @@ import Skills from "./Components/Skills/Skills";
 import Portfolio from "./Components/Portfolio/Portfolio";
 import ContactMe from "./Components/Contact Me/ContactMe";
 import Footer from "./Components/Footer/Footer";
-// import './App.css'
+import './App.css'
 
 class App extends Component {
     componentDidMount() {
@@ -22,8 +22,11 @@ class App extends Component {
         name: "Sachin Pundir",
         position: "Software Engineer",
         home_content:
-            "Lorem ipsum dolor sit amet. Sed unde Quis ut nihil exercitationem qui accusamus cumque? Ut blanditiis nihil est neque provident",
+            "MCA student from Kurukshetra University with proven problem solving, technical and communication skills",
     };
+
+    // problem with the aos slide-left 
+    // element goes out of the viwpowrt which increase the widht
 
     render() {
         const { name, position, home_content } = this.home_details;

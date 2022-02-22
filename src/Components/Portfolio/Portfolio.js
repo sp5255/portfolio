@@ -18,10 +18,10 @@ import Card from "./Card";
 function Portfolio() {
     const details = "Some Details";
     return (
-        <div className="portfolio--container" id="Portfolio">
+        <div data-aos="slide-left" className="portfolio--container" id="Portfolio">
 
             <div className="title">
-                <h2>Portfolio</h2>
+                <label>Portfolio</label>
             </div>
             
 

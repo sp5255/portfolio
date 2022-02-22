@@ -7,10 +7,10 @@ import HomeImg from "../../Assets/images/blob.svg";
 import profile from "../../Assets/images/IMG_20210824_175141-removebg-preview.png";
 
 class HomeSection extends Component {
-    //<i class="uil uil-mouse-alt"></i>
-    //<i class="uil uil-message"></i>
-    //<i class="uil uil-github-alt"></i>
-    //<i class="uil uil-linkedin-alt"></i>
+    //<i className="uil uil-mouse-alt"></i>
+    //<i className="uil uil-message"></i>
+    //<i className="uil uil-github-alt"></i>
+    //<i className="uil uil-linkedin-alt"></i>
     //
     render() {
         const { name, position, home_content, scrollDown } = this.props;
@@ -19,8 +19,8 @@ class HomeSection extends Component {
             <>
                 <div className="home--section" id="Home">
                     <div className="home__icons">
-                        <i class="uil uil-linkedin-alt"></i>
-                        <i class="uil uil-github-alt"></i>
+                        <i className="uil uil-linkedin-alt"></i>
+                        <i className="uil uil-github-alt"></i>
                     </div>
 
                     <div className="home__content">
@@ -37,19 +37,19 @@ class HomeSection extends Component {
                                     }}
                                 />
                             </h1>
-                            <p>{position}</p>
+                            <p className = "position">{position}</p>
                         </div>
 
                         <p className="content__p">{home_content}</p>
 
                         <button id="Contact_me">
                             <span>Contact me </span>
-                            <i class="uil uil-message"></i>
+                            <i className="uil uil-message"></i>
                         </button>
 
                         <div className="footer">
                             <a href= {`#${scrollDown}`}>                                
-                                    <i class="uil uil-mouse-alt"></i>
+                                    <i className="uil uil-mouse-alt"></i>
                                     <label>Scroll down</label>                               
                             </a>
                         </div>

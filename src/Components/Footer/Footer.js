@@ -21,7 +21,7 @@ function Footer(props) {
                 </div>
                 <div>
                     <label>
-                        <i class="uil uil-copyright"></i>
+                        <i className="uil uil-copyright"></i>
                         All rights reserved
                     </label>
                 </div>
@@ -30,17 +30,17 @@ function Footer(props) {
             <div className="icons">
                 <a href="#">
                     <span>
-                        <i class="uil uil-facebook-f"></i>
+                        <i className="uil uil-facebook-f"></i>
                     </span>
                 </a>
                 <a href="#">
                     <span>
-                        <i class="uil uil-instagram"></i>
+                        <i className="uil uil-instagram"></i>
                     </span>
                 </a>
                 <a href="#">
                     <span>
-                        <i class="uil uil-twitter-alt"></i>
+                        <i className="uil uil-twitter-alt"></i>
                     </span>
                 </a>
             </div>

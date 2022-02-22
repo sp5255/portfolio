@@ -16,14 +16,23 @@ $main--color: #6256bf;
 
 .skills--section{
     width: 99vw;
+    // width: 50vw;
     height: 90vh;    
 }
 
-
 .skills__title{
-    text-align: center;    
+    text-align: center;
     padding: 4rem 0rem;
+}
+
+.skills__title label{
+    font-size: 3rem;
+    font-weight: 500;        
     // background-color: red
+}
+
+.skills--section p{
+    margin: 0%
 }
 
 // contains domains and  inside that skills

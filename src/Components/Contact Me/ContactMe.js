@@ -6,9 +6,9 @@ import '../../Assets/Styles/ContactMe/index.css'
 class ContactMe extends React.Component {
     render() {        
         return (
-            <div className="contact--section" id="ContactMe">
+            <div data-aos="slide-right" className="contact--section" id="ContactMe">
             <div className="title">
-                <h2>Contact Me</h2>
+                <label>Contact Me</label>
             </div>
             
             <div className="contact--container">                

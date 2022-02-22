@@ -15,10 +15,17 @@ $main--color: #6256bf;
     .title {
         text-align: center;        
         // background-color: red;   
-        padding: 4rem 0rem;
+        padding: 4rem 0rem;        
         
+    }    
+
+    .title label{
+        // padding: 4rem 0rem;
+        font-size: 3rem;
+        font-weight: 500;
     }
 }
+
 
 // next , prev arrows
 .swiper-button-prev,

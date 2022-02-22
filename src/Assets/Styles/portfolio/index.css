@@ -14,6 +14,11 @@
   padding: 4rem 0rem;
 }
 
+.portfolio--container .title label {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
 .swiper-button-prev,
 .swiper-button-next {
   color: #6256bf;

@@ -32,7 +32,8 @@ export default class Skills extends Component {
         return (
             <div data-aos="slide-right" className="skills--section" id="Skills">
                 <div className="skills__title">
-                    <h1>Skills</h1>
+                    <label>Skills</label>
+                    <p>My Technical level</p>
                 </div>
 
                 <div className="skills-container">
