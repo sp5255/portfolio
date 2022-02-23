@@ -20,16 +20,19 @@ $main--color: #6256bf;
 }
 
 nav{
-    @include flex(space-between,center  );    
-    max-width: 99vw;
+    @include flex(space-around,center  );    
     background: $nav--color;
-    padding: 0rem 12rem;
-    
+    // background-color: red;    
     letter-spacing: .02rem;
-    position: sticky;
-    top: 0rem;
+    position: fixed;
+    /* top: 0rem; */
+    height: 4rem;
     z-index: 2;
-    border-bottom: 1px solid rgba($color: #000000, $alpha: .3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    width: 100vw;
+}
+.nav__name{
+    margin-right: 15vw;
 }
 
 .nav--menu{
@@ -58,7 +61,7 @@ nav{
     }
 
 }
-.modes--icon img{
-    width:1.5rem;
+.modes--icon {    
+    font-size: 1.5rem;
     cursor: pointer;    
 }

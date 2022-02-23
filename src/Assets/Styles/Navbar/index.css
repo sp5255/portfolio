@@ -7,21 +7,23 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 99vw;
   background: #ffffff;
-  padding: 0rem 12rem;
   letter-spacing: .02rem;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0rem;
+  position: fixed;
+  /* top: 0rem; */
+  height: 4rem;
   z-index: 2;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  width: 100vw;
+}
+
+.nav__name {
+  margin-right: 15vw;
 }
 
 .nav--menu {
@@ -62,8 +64,8 @@ nav {
   color: #6256bf;
 }
 
-.modes--icon img {
-  width: 1.5rem;
+.modes--icon {
+  font-size: 1.5rem;
   cursor: pointer;
 }
 /*# sourceMappingURL=index.css.map */

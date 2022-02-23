@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-scroll";
 // import "bootstrap/dist/css/bootstrap.min.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -8,14 +9,27 @@ import Skills from "./Components/Skills/Skills";
 import Portfolio from "./Components/Portfolio/Portfolio";
 import ContactMe from "./Components/Contact Me/ContactMe";
 import Footer from "./Components/Footer/Footer";
-import './App.css'
+import "./App.css";
 
 class App extends Component {
+    constructor() {
+        super();
+        this.state = {
+            isDarkMode: false,
+        };
+    }
+
     componentDidMount() {
         Aos.init({
-            duration: 1000,
+            duration: 500,
         });
-    }   
+    }
+
+    changeMode = (current_mode) => {
+        this.setState({
+            isDarkMode: current_mode,
+        });
+    };
 
     nav_menu = ["Home", /* 'About', */ "Skills", "Portfolio", "ContactMe"];
     home_details = {
@@ -25,24 +39,38 @@ class App extends Component {
             "MCA student from Kurukshetra University with proven problem solving, technical and communication skills",
     };
 
-    // problem with the aos slide-left 
+    // problem with the aos slide-left
     // element goes out of the viwpowrt which increase the widht
 
     render() {
         const { name, position, home_content } = this.home_details;
+        const dark = this.state.isDarkMode ? 'dark--mode' : ''
         return (
-            <div className="App">
-                <Navbar name = {name} nav_menu={this.nav_menu} />
+            <div className={`App ${dark}`} >
+                <Navbar
+                    name={name}
+                    nav_menu={this.nav_menu}
+                    handleMode={this.changeMode}
+                />
                 <HomeSection
                     name={name}
                     position={position}
                     home_content={home_content}
-                    scrollDown = {this.nav_menu[1]}                    
+                    scrollDown={this.nav_menu[1]}
                 />
                 <Skills />
-                <Portfolio />                                
+                <Portfolio />
                 <ContactMe />
                 <Footer name="Sachin Pundir" title="Software Engineer" />
+{/* 
+                <div className="floating--top">
+                    <Link to ="Home"
+                    smooth = {true}
+                    spy = {true}
+                    duration = {400}>
+                        <i class="uil uil-top-arrow-from-top"></i>
+                    </Link>
+                </div> */}
             </div>
         );
     }

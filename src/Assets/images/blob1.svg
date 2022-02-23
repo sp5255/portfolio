@@ -1,4 +1,8 @@
-<?xml version="1.0" standalone="no"?>
 <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-  <path fill="#0F62FE" d="M42.6,24.2C29.6,47.2,-24.4,46.2,-38.3,22.7C-52.3,-0.8,-26.1,-46.9,0.9,-46.4C27.8,-45.9,55.7,1.2,42.6,24.2Z" transform="translate(100 100)" />
+  
+  <clipPath id="clip-path">
+    <path fill="#0F62FE" d="M42.6,24.2C29.6,47.2,-24.4,46.2,-38.3,22.7C-52.3,-0.8,-26.1,-46.9,0.9,-46.4C27.8,-45.9,55.7,1.2,42.6,24.2Z" transform="translate(100 100)" />    
+  </clipPath>  
+  <!-- xlink:href for modern browsers, src for IE8- -->
+  <image clip-path="url(#clip-path)" href="../images/IMG.png" alt="Image" height="500" width="500" class="svg__image"/>
 </svg>

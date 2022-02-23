@@ -18,6 +18,11 @@
   font-weight: 500;
 }
 
+.contact--section > .title span {
+  display: block;
+  color: rgba(0, 0, 0, 0.7);
+}
+
 .contact--sideCard {
   margin: 1rem;
   display: -webkit-box;

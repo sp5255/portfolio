@@ -2,7 +2,9 @@
 // $primary--color:#8441dc;
 // $app--color :#6a72fc ;
 
+// $main--color: #7069e6;
 $main--color: #6256bf;
+
 
 @mixin flex($just, $align, $dir: row) {
     display: flex;
@@ -20,7 +22,7 @@ $main--color: #6256bf;
 .home--section {
     @include flex(initial, initial);
     height: 95vh;
-    width: 75vw;
+    width: 70vw;
     margin: auto;
 }
 
@@ -32,7 +34,7 @@ $main--color: #6256bf;
     // padding: 2rem;
     margin-right: 1rem;
 
-    i {
+    i,a {
         margin: 1rem;
     }
 }
@@ -41,8 +43,9 @@ $main--color: #6256bf;
 .home__content {
     @include flex(initial, space-around, column);
     flex: 2;
+    padding: 0rem 5rem;
     padding-top: 9rem;
-    padding-bottom: 7rem;
+    padding-bottom: 7rem;    
     // background-color: red;
 
     h1 {
@@ -65,37 +68,6 @@ $main--color: #6256bf;
     }
 }
 
-.home__content .footer {
-    width: fit-content;    
-    
-    a {
-        @include flex(initial, center);
-        // background: yellow;        
-        text-decoration: none;            
-        margin-top: 4rem;
-        color: $main--color;        
-    }
-
-    a :hover {        
-        cursor: pointer;     
-    }
-
-    i {
-        font-size: 2rem;        
-    }
-
-    transition: all .2s;
-}
-
-
-.home__content .footer:hover{
-    transform: translateY(4px);
-}
-// // welcome message and title
-// .home__content > div:nth-child(1) {
-//     // height: 8rem;
-//     background-color: red;
-// }
 
 //button
 #Contact_me {
@@ -127,27 +99,74 @@ $main--color: #6256bf;
     transform: translateY(2px);
 }
 
+
+.home__content .footer {
+    width: fit-content;    
+    
+    a {
+        @include flex(initial, center);
+        // background: yellow;        
+        text-decoration: none;            
+        margin-top: 4rem;     
+        color: initial;        
+    }
+
+    a :hover {        
+        cursor: pointer;     
+    }
+
+    i {
+        font-size: 2rem;   
+        color: $main--color;           
+    }
+
+    transition: all .2s;
+}
+
+
+.home__content .footer:hover{
+    transform: translateY(4px);
+}
+// // welcome message and title
+// .home__content > div:nth-child(1) {
+//     // height: 8rem;
+//     background-color: red;
+// }
+
+
+
 //right photo container
 .home__profile {
-    // @include flex(center,flex-start  );
-    flex: 2;
+    @include flex(center,center  );
+    flex: 1;
     position: relative;
-
-    img {
-        max-width: 60%;
-    }
+// background: blue; 
+    /* img {
+        // max-width: 60%;
+    } */
 }
 
-.home__profile > div {
-    // background: red;
-    position: relative;
-    transform: translate(3rem, 10rem);
-    // @include flex(flex-start, center );
+/* .home__profile > div {
+    // background: red; 
+    // position: relative;
+    // transform: translate(3rem, 10rem);
+    // background: url('../../images/blob.svg');
+    // background-repeat: no-repeat;
+    // background-position: center;
+    // @include flex(center, center );
+    // background-color: red;
+} */
+
+.profilePic {    
+    // max-height: 100%;    
+    height: 100%;
+    mask-image: url(../../images/blob.svg);
+    mask-repeat: no-repeat;
+    background-color: $main--color    ;
+    padding: 1.5rem;
+    width: 15rem;    
 }
 
-.profilePic {
-    position: absolute;
-    max-height: 70%;
-    left: 4rem;
-    top: 3rem;
+.dark--mode > .home--section label{
+    color: white;
 }

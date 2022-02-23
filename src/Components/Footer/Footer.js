@@ -15,9 +15,9 @@ function Footer(props) {
 
         <div className="mid--section">
                 <div>
-                    <a href="#">Skills</a>
-                    <a href="#">Portfolio</a>
-                    <a href="#">Contact Me</a>
+                    <a href="#Skills">Skills</a>
+                    <a href="#Portfolio">Portfolio</a>
+                    <a href="#ContactMe">Contact Me</a>
                 </div>
                 <div>
                     <label>

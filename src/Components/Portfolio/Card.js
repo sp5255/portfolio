@@ -10,7 +10,8 @@ function Card (props){
             <div className="p__details">
                 <label>{title}</label>
                 <p>{details}</p>
-                <a href={href}><button>Demo</button></a>
+                <a href={href} target = "_blank">Demo
+                <i class="uil uil-arrow-right"></i></a>
             </div>
         </div>
     )

@@ -10,4 +10,39 @@
 
 .App{
   overflow-x: hidden;
+  position: relative;
 }
+
+.floating--top{
+  background-color: red;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: fixed;
+  bottom: 4rem;
+  right: 2vw;
+}
+
+.dark--mode,
+.dark--mode > *,
+.dark--mode > nav *{
+    background-color: #1a1525;
+    color: white;    
+}
+
+.dark--mode > .footer--section{
+  background-color: #0f0e1d;
+}
+
+.dark--mode .skills__title>p,
+.dark--mode > .contact--section >.title span{
+  color: rgba(255, 255, 255, 0.7);
+  /* color: red; */
+}
+
+.dark--mode > .contact--section .contact--details > label:nth-child(2){
+  color: rgba(255, 255, 255, 0.7);
+}
+
+
+

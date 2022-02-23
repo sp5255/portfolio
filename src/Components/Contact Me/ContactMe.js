@@ -9,6 +9,7 @@ class ContactMe extends React.Component {
             <div data-aos="slide-right" className="contact--section" id="ContactMe">
             <div className="title">
                 <label>Contact Me</label>
+                <span>Get in touch</span>
             </div>
             
             <div className="contact--container">                
