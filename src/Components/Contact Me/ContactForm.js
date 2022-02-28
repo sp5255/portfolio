@@ -1,6 +1,15 @@
 import React from "react";
 
 class ContactForm extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            name:'',
+            email:'',
+            mobile:'',
+            message:'',
+        };
+    }
     render() {
         return (
             <div className="contact--form--section">

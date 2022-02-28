@@ -1,11 +1,11 @@
 .skills--section {
   width: 99vw;
-  height: 90vh;
+  padding: 4rem 0rem;
+  min-height: 90vh;
 }
 
 .skills__title {
   text-align: center;
-  padding: 4rem 0rem;
 }
 
 .skills__title label {

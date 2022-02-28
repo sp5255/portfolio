@@ -24,6 +24,7 @@ $main--color: #6256bf;
     height: 95vh;
     width: 70vw;
     margin: auto;
+    margin-top: 4rem
 }
 
 .home__icons {
@@ -43,7 +44,7 @@ $main--color: #6256bf;
 .home__content {
     @include flex(initial, space-around, column);
     flex: 2;
-    padding: 0rem 5rem;
+    padding: 0rem 5vw;
     padding-top: 9rem;
     padding-bottom: 7rem;    
     // background-color: red;
@@ -127,11 +128,11 @@ $main--color: #6256bf;
 .home__content .footer:hover{
     transform: translateY(4px);
 }
-// // welcome message and title
-// .home__content > div:nth-child(1) {
-//     // height: 8rem;
-//     background-color: red;
-// }
+// welcome message and title
+.home__content > div:nth-child(1) {
+    height: 18rem; 
+    // background-color: red;
+}
 
 
 

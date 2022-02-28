@@ -25,16 +25,20 @@ $main--color: #6256bf;
 //     // background-color: blue;
 // }
 
+
+.contact--section{
+    padding: 4rem 0rem;
+// background-color: yellow;
+}
 .contact--container {
     padding: 4rem 0rem;
     display: flex;
-    justify-content: center;
+    justify-content: center;    
 }
 
 .contact--section > .title{
     text-align: center;
     // background-color: red;
-    padding: 4rem 0rem;
 
     label{
         font-size: 3rem;

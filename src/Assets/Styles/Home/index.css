@@ -15,6 +15,7 @@
   height: 95vh;
   width: 70vw;
   margin: auto;
+  margin-top: 4rem;
 }
 
 .home__icons {
@@ -56,7 +57,7 @@
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
-  padding: 0rem 5rem;
+  padding: 0rem 5vw;
   padding-top: 9rem;
   padding-bottom: 7rem;
 }
@@ -149,6 +150,10 @@
 .home__content .footer:hover {
   -webkit-transform: translateY(4px);
           transform: translateY(4px);
+}
+
+.home__content > div:nth-child(1) {
+  height: 18rem;
 }
 
 .home__profile {

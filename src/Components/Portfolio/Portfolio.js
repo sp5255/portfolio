@@ -16,7 +16,7 @@ import { Navigation, Pagination } from "swiper";
 
 import todoImg from "../../Assets/images/Screenshot from 2022-02-21 11-02-50.png";
 import EcommerceImg from "../../Assets/images/Screenshot from 2022-02-21 11-11-26.png";
-import visualizerImg from "../../Assets/images/Screenshot from 2022-02-21 11-11-26.png";
+import visualizerImg from "../../Assets/images/Screenshot from 2022-02-21 11-08-51.png";
 
 function displayCard(projects) {
     return projects.map((project) => (

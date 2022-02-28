@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "react-scroll";
-// import "bootstrap/dist/css/bootstrap.min.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
+
 import Navbar from "./Components/Navbar/Navbar";
 import HomeSection from "./Components/Home/HomeSection";
 import Skills from "./Components/Skills/Skills";
@@ -38,10 +38,6 @@ class App extends Component {
         home_content:
             "MCA student from Kurukshetra University with proven problem solving, technical and communication skills",
     };
-
-    // problem with the aos slide-left
-    // element goes out of the viwpowrt which increase the widht
-
     render() {
         const { name, position, home_content } = this.home_details;
         const dark = this.state.isDarkMode ? 'dark--mode' : ''
@@ -56,7 +52,7 @@ class App extends Component {
                     name={name}
                     position={position}
                     home_content={home_content}
-                    scrollDown={this.nav_menu[1]}
+                    scrollDown={this.nav_menu[1]}   
                 />
                 <Skills />
                 <Portfolio />
@@ -75,15 +71,5 @@ class App extends Component {
         );
     }
 }
-
-/* <div className='box'>
-<div id='Home'>Home</div>
-<div  id='Skills'> skills</div>
-<div data-aos ="fade-right"  id='Portfolio'>Portfoil</div>
-<div data-aos="fade-right" id='About'>About</div>
-<div data-aos="fade-left">one</div>
-<div>one</div>
-<div>one</div>
-</div> */
 
 export default App;

@@ -1,3 +1,7 @@
+.contact--section {
+  padding: 4rem 0rem;
+}
+
 .contact--container {
   padding: 4rem 0rem;
   display: -webkit-box;
@@ -10,7 +14,6 @@
 
 .contact--section > .title {
   text-align: center;
-  padding: 4rem 0rem;
 }
 
 .contact--section > .title label {

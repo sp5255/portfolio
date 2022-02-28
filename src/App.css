@@ -46,3 +46,88 @@
 
 
 
+
+
+@media all and (max-width:1100px) {    
+  .home--section{
+      width: 80vw;        
+  }
+  
+  .home__content{
+      padding-left: 0%;      
+  }
+
+  .footer--section .mid--section>div{
+    display: flex
+  }
+
+  .p__img--container{
+    width: 45%;
+  }
+  .p__details{
+    margin-left: 1rem;
+  }
+
+
+}
+
+@media all and (max-width:900px) {
+  nav{
+    justify-content: space-between;
+    padding: 0rem 1rem;
+  }
+  
+
+  .nav__name{
+    margin-left: 1rem;
+  }
+
+  .nav--menu{
+    margin-right:2rem;
+  }
+
+  .home--section{
+      padding:1rem;
+      width: calc(100vw - 2rem);
+  }
+
+  .footer--section{
+    padding: 5rem;
+  }
+  
+
+}
+
+
+@media all and (max-width:800px) {
+  .home--section{
+    margin-top: 2.5rem;
+  }
+  .home__profile{
+    display: initial;
+    transform: translateY(10rem);
+  }
+
+  .profilePic{
+    width: 10rem;
+  }
+}
+
+@media all and (max-width:850px) {
+  .contact--form--section .d-inline{
+    display: initial;            
+  }
+
+  .contact--form--section form{
+    width: 50vw;
+  }  
+  
+  .contact--form--section .i--style input{
+    width: calc(100% - 5rem);
+  }
+
+.portfolio--container  .mySwiper {
+    width: 100vw;
+  }
+}
+
