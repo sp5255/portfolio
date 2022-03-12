@@ -49,7 +49,7 @@ export default class Skills extends Component {
                                 <Bars name="HTML" percentage="90%" />
                                 <Bars name="CSS" percentage="70%" />
                                 <Bars name="JavaScript" percentage="80%" />
-                                <Bars name="React.js" percentage="60%" />
+                                <Bars name="React.js" percentage="85%" />
                             </div>
                         </Technologies>
 

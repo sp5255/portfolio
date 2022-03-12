@@ -19,7 +19,7 @@ class HomeSection extends Component {
 
         return (
             <>
-                <div className="home--section" id="Home">
+                <div className="home--section" id="Home" >
                     <div className="home__icons">
                         <a href="https://www.linkedin.com/in/sachin-pundir-b1b97a1b1/" target={"_blank"}>
 
@@ -49,17 +49,19 @@ class HomeSection extends Component {
                         </div>
 
                         <p className="content__p">{home_content}</p>
+                        
+                        <a href="./Sachin.pdf" download="Sachin Pundir Resume.pdf">
 
-                        <button id="Contact_me">
-                            <span>Contact me </span>
-                            <i className="uil uil-message"></i>
-                        </button>
-
+                        <button type="submit" id="Contact_me">
+                            <span>Resume </span>
+                            <i className="uil uil-import"></i>
+                        </button>                        
+                        </a>
                         <div className="footer">
                             <a href={`#${scrollDown}`}>
                                 <i className="uil uil-mouse-alt"></i>
                                 <label>Scroll down</label>
-                                <i class="uil uil-arrow-down"></i>
+                                <i className="uil uil-arrow-down"></i>
                             </a>
                         </div>
                     </div>

@@ -1,4 +1,5 @@
 import { Component } from "react";
+import Link from "react-scroll/modules/components/Link";
 
 class NavMenu extends Component{
     constructor(props){
@@ -6,11 +7,31 @@ class NavMenu extends Component{
     }    
 
     render(){
-        console.log(this.props);
+        const {nav_menu} = this.props;
         return(
-            <div>
-
-            </div>
+            <>
+                <ul>
+                        {nav_menu.map((value, ind) => {
+                            // console.log(value)
+                            return (
+                                <li key={ind}>
+                                    <Link
+                                        to={value}
+                                        offset={-50}
+                                        // activeClass="active"
+                                        smooth={true}
+                                        spy={true}
+                                        duration={400}
+                                    >
+                                        {value}
+                                    </Link>
+                                </li>
+                            );
+                        })}
+                    </ul>
+            </>
         )
     }
 }
+
+export default NavMenu;

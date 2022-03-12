@@ -55,3 +55,7 @@
         font-size: 1.5rem;
     }
 }
+
+.copyright{
+    @include flex(initial,center ,column );
+}

@@ -131,18 +131,22 @@ textarea {
     font-size: 1.2rem;
     border-radius: 0.3rem;
 
-    transition: all 0.2s;
+    border:none;
+    outline:none;
 
-    input {
-        color: inherit;
-        background: none;
-        border: none;
-        outline: none;
-        font-size: 1rem;
+    transition: all 0.2s;     
+
+    i{
+        margin-left: .3rem;
     }
 }
 
-.submit--btn:hover {
+.submit--btn:hover,
+.submit--btn > * {
     cursor: pointer;
-    transform: translateY(2px);
 }
+
+.submit--btn:hover{
+    transform: translateY(2px);    
+}
+

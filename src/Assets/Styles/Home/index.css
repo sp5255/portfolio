@@ -115,6 +115,7 @@
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  margin-top: 4rem;
   -webkit-transition: all .2s;
   transition: all .2s;
 }
@@ -134,7 +135,6 @@
       -ms-flex-align: center;
           align-items: center;
   text-decoration: none;
-  margin-top: 4rem;
   color: initial;
 }
 
@@ -154,6 +154,13 @@
 
 .home__content > div:nth-child(1) {
   height: 18rem;
+}
+
+.home__content a {
+  text-decoration: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .home__profile {

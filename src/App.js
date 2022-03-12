@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-scroll";
+
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -36,7 +36,7 @@ class App extends Component {
         name: "Sachin Pundir",
         position: "Software Engineer",
         home_content:
-            "MCA student from Kurukshetra University with proven problem solving, technical and communication skills",
+            "MCA final year student at Kurukshetra University going to be graduated in 2022 with proven problem solving, technical and communication skills",
     };
     render() {
         const { name, position, home_content } = this.home_details;

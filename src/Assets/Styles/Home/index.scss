@@ -103,13 +103,15 @@ $main--color: #6256bf;
 
 .home__content .footer {
     width: fit-content;    
+    margin-top: 4rem;     
     
     a {
         @include flex(initial, center);
         // background: yellow;        
         text-decoration: none;            
-        margin-top: 4rem;     
+        
         color: initial;        
+        
     }
 
     a :hover {        
@@ -134,6 +136,10 @@ $main--color: #6256bf;
     // background-color: red;
 }
 
+.home__content a{
+    text-decoration: none;
+    width: fit-content
+}
 
 
 //right photo container

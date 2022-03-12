@@ -11,9 +11,9 @@ function Card (props){
                 <label>{title}</label>
                 <p>{details}</p>
                 <a href={href} target = "_blank">Demo
-                <i class="uil uil-arrow-right"></i></a>
+                <i className="uil uil-arrow-right"></i></a>
             </div>
-        </div>
+        </div>      
     )
 }
 

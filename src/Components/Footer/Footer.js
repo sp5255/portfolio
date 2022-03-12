@@ -19,7 +19,11 @@ function Footer(props) {
                     <a href="#Portfolio">Portfolio</a>
                     <a href="#ContactMe">Contact Me</a>
                 </div>
-                <div>
+
+                <div className="copyright">
+                    <p>
+                        Made by Sachin Pundir with ❤️
+                    </p>
                     <label>
                         <i className="uil uil-copyright"></i>
                         All rights reserved
