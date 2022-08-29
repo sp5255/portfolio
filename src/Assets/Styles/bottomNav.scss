@@ -1,0 +1,123 @@
+// .bottom-nav{
+//     // background: #6256bf;
+//     filter: drop-shadow(2px 4px 6px black);
+//     // color: white    ;
+//     position: fixed;
+//     bottom: 0rem;
+//     width: 20rem;
+//     // left: calc(25rem - 50%);
+//     right:25%;
+// }
+
+$primary-color:#6256bf;
+
+.navigation {
+  width: 400px;
+  height: 70px;
+  background: $primary-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  // margin-top: 5rem;
+  position: fixed;
+  bottom: 0rem;
+
+  // center a fixed div
+  left:50%;
+  transform: translateX(-50%);
+
+  z-index: 100;
+  border-top: 10px solid white;
+
+  ul {
+    display: flex;
+    //  width: 350px;
+    gap: 1rem;
+    position: relative;
+    padding: 0rem;
+  }
+}
+
+.navigation ul li {
+  position: relative;
+  list-style: none;
+  z-index: 1;
+  height: 75px;
+  width: 75px;
+
+  a {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+}
+
+.navigation ul li a {
+  .icon {
+    position: relative;
+    display: block;
+    line-height: 75px;
+    font-size: 1.5rem;
+    text-align: center;
+    transition: 0.5s;
+    color: white;
+    // color:yellow;
+  }
+
+  .text {
+    position: absolute;
+    font-size: 0.75rem;
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(20px);
+    color: white;
+  }
+}
+
+.navigation ul li.active a {
+  .icon {
+    transform: translateY(-33px);
+  }
+
+  .text {
+    opacity: 1;
+    transform: translateY(50px);
+  }
+}
+
+.indicator {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: -55%;
+  background: $primary-color;
+  border-radius: 50%;
+  border: 6px solid white;
+  transition: 0.5s;
+}
+
+.indicator::before {
+  content: "";
+  position: absolute;
+  top: 56%;
+  left: -21px;
+  width: 20px;
+  height: 20px;
+  // background: #f00;
+  border-top-right-radius: 20px;
+  box-shadow: 0px -10px 0 0 white;
+}
+.indicator::after {
+  content: "";
+  position: absolute;
+  top: 56%;
+  right: -21px;
+  width: 20px;
+  height: 20px;
+  // background: #f00;
+  border-top-left-radius: 20px;
+  box-shadow: 0px -10px 0 0 white;
+}

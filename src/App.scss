@@ -1,0 +1,169 @@
+/*color :  #6a72fc */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+  /* box-sizing: border-box; */
+}
+
+.App {
+  overflow-x: hidden;
+  position: relative;
+}
+
+.floating--top {
+  background-color: red;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: fixed;
+  bottom: 4rem;
+  right: 2vw;
+}
+
+.dark--mode,
+.dark--mode > *,
+.dark--mode > nav * {
+  background-color: #1a1525;
+  color: white;
+}
+
+.dark--mode > .footer--section {
+  background-color: #0f0e1d;
+}
+
+.dark--mode .skills__title > p,
+.dark--mode > .contact--section > .title span {
+  color: rgba(255, 255, 255, 0.7);
+  /* color: red; */
+}
+
+.dark--mode > .contact--section .contact--details > label:nth-child(2) {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+
+/* 
+
+
+@media all and (max-width:1100px) {    
+  .home--section{
+      width: 80vw;        
+  }
+  
+  .home__content{
+      padding-left: 0%;      
+  }
+
+  .footer--section .mid--section>div{
+    display: flex
+  }
+
+  .p__img--container{
+    width: 45%;
+  }
+  .p__details{
+    margin-left: 1rem;
+  }
+
+
+}
+
+@media all and (max-width:900px) {
+  nav{
+    justify-content: space-between;
+    padding: 0rem 1rem;
+  }
+  
+
+  .nav__name{
+    margin-left: 1rem;
+  }
+
+  .nav--menu{
+    margin-right:2rem;
+  }
+
+  .home--section{
+      padding:1rem;
+      width: calc(100vw - 2rem);
+  }
+
+  .footer--section{
+    padding: 5rem;
+  }
+  
+
+}
+
+
+@media all and (max-width:800px) {
+  .home--section{
+    margin-top: 2.5rem;
+  }
+  .home__profile{
+    display: initial;
+    transform: translateY(10rem);
+  }
+
+  .profilePic{
+    width: 10rem;
+  } */
+/* } */
+
+.section-container{
+  margin: auto;
+  max-width: 80vw;
+
+  @media all and (max-width:1024px) {
+    max-width: 90vw;
+  }
+}
+
+@media all and (max-width: 850px) {
+  .contact--form--section .d-inline {
+    display: initial;
+  }
+
+  .contact--form--section form {
+    width: 50vw;
+  }
+
+  .contact--form--section .i--style input {
+    width: calc(100% - 5rem);
+  }
+
+  .portfolio--container .mySwiper {
+    width: 100vw;
+  }
+
+  // .desktop-view{
+  //   display: none;
+  // }
+  // .mobile-view{
+  //   display: block;
+  // }
+}
+
+
+
+
+
+@media all and (min-width: 1200px) {
+  #Home {
+    max-width: 70vw;
+  }
+  .section-container {
+    max-width: 70vw;
+  }
+}
+
+@media all and (min-width: 2000px) {
+  #Home {
+    max-width: 1500px;
+  }
+  .section-container {
+    max-width: 1500px;
+  }
+}

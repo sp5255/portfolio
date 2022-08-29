@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+$nav--color : #ffffff;
+// $temp--color : #1133ff;
+// $link-color : #7164dc;
+$main--color: #6256bf;
+
+@mixin  flex ($just, $align, $dir : row){
+    display: flex;
+    flex-direction: $dir;
+
+    @if($dir == column){
+        justify-content: $align;
+        align-items: $just;
+    }        
+    @else{
+        justify-content: $just;
+        align-items: $align;
+    }
+}
+
+nav{
+    @include flex(space-around,center  );    
+    background: $nav--color;
+    // background-color: red;    
+    letter-spacing: .02rem;
+    position: fixed;
+    /* top: 0rem; */
+    height: 4rem;
+    z-index: 2;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    width: 100vw;
+}
+.nav__name{
+    margin-right: 15vw;
+}
+
+.nav--menu{
+    @include flex(initial,center);
+
+    ul{
+        margin:1rem 0rem;
+    }
+
+    li{
+        display: inline;
+        margin-right: 1.5rem;
+    }
+
+    li:hover{
+        cursor: pointer;
+    }
+
+    a{
+        text-decoration: none;
+        color: black;
+    }   
+
+    a.active{
+        color: $main--color;        
+    }
+
+}
+.modes--icon {    
+    font-size: 1.5rem;
+    cursor: pointer;    
+}

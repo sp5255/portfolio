@@ -1,0 +1,28 @@
+@mixin  flex ($just, $align, $dir : row){
+    display: flex;
+    flex-direction: $dir;    
+
+    @if($dir == column){
+        justify-content: $align;
+        align-items: $just;
+    }        
+    @else{
+        justify-content: $just;
+        align-items: $align;
+    }
+}
+
+
+.about--section{
+    background: yellowgreen;
+    height: 90vh;
+}
+.about__title{
+    background: red;
+    text-align: center;
+}
+
+.about__container{
+    @include flex(initial,center );
+
+}

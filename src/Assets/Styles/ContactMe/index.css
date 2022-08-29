@@ -1,0 +1,140 @@
+.contact--section {
+  padding: 4rem 0rem;
+}
+
+.contact--container {
+  padding: 4rem 0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact--section > .title {
+  text-align: center;
+}
+
+.contact--section > .title label {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.contact--section > .title span {
+  display: block;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.contact--sideCard {
+  margin: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact--sideCard label {
+  display: block;
+}
+
+.contact--icon {
+  font-size: 2.5rem;
+  color: #6256bf;
+}
+
+.contact--details,
+.contact--icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0.3rem;
+}
+
+.contact--details label:nth-child(1) {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.contact--details label:nth-child(2) {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.d-inline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+textarea {
+  height: 10rem;
+}
+
+.i--style input,
+textarea {
+  background-color: #f3f3f3;
+  margin: 1rem;
+  padding: 1rem 1.5rem;
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+[type="tel"],
+textarea {
+  width: calc(100% - 5rem);
+}
+
+.submit--btn {
+  background-color: #6256bf;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+  border-radius: 0.3rem;
+  border: none;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.submit--btn i {
+  margin-left: .3rem;
+}
+
+.submit--btn:hover,
+.submit--btn > * {
+  cursor: pointer;
+}
+
+.submit--btn:hover {
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+/*# sourceMappingURL=index.css.map */
