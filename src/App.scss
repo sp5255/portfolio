@@ -1,0 +1,94 @@
+/*color :  #6a72fc */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+  /* box-sizing: border-box; */
+}
+
+body {
+  margin: 0%;
+}
+
+.App {
+  overflow-x: hidden;
+  position: relative;
+}
+
+.floating--top {
+  background-color: red;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: fixed;
+  bottom: 4rem;
+  right: 2vw;
+}
+
+.dark--mode,
+.dark--mode > *,
+.dark--mode > nav * {
+  background-color: #1a1525;
+  color: white;
+}
+
+.dark--mode > .footer--section {
+  background-color: #0f0e1d;
+}
+
+.dark--mode .skills__title > p,
+.dark--mode > .contact--section > .title span {
+  color: rgba(255, 255, 255, 0.7);
+  /* color: red; */
+}
+
+.dark--mode > .contact--section .contact--details > label:nth-child(2) {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.section-container {
+  margin: auto;
+  max-width: 80vw;
+
+  @media all and (max-width: 1024px) {
+    max-width: 90vw;
+  }
+}
+
+@media all and (max-width: 850px) {
+  .contact--form--section .d-inline {
+    display: initial;
+  }
+
+  .contact--form--section form {
+    width: 50vw;
+  }
+
+  .contact--form--section .i--style input {
+    width: calc(100% - 5rem);
+  }
+
+  .portfolio--container .mySwiper {
+    width: 100vw;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  #Home {
+    max-width: 70vw;
+  }
+  .section-container {
+    max-width: 70vw;
+  }
+}
+
+@media all and (min-width: 2000px) {
+  #Home {
+    max-width: 1500px;
+  }
+  .section-container {
+    max-width: 1500px;
+  }
+}
+

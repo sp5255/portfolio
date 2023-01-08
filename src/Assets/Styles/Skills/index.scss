@@ -1,104 +1,104 @@
 $main--color: #6256bf;
 
-@mixin  flex ($just, $align, $dir : row){
-    display: flex;
-    flex-direction: $dir;    
+@mixin flex($just, $align, $dir: row) {
+  display: flex;
+  flex-direction: $dir;
 
-    @if($dir == column){
-        justify-content: $align;
-        align-items: $just;
-    }        
-    @else{
-        justify-content: $just;
-        align-items: $align;
-    }
+  @if ($dir == column) {
+    justify-content: $align;
+    align-items: $just;
+  } @else {
+    justify-content: $just;
+    align-items: $align;
+  }
 }
 
-.skills--section{
-    width: 99vw;
-    // width: 50vw;
-    // height: 90vh;       
-    padding: 4rem 0rem;
-    
-    // background-color: yellow;
-    min-height: 90vh;
+.skills--section {
+  padding: 4rem 0rem;
+  // background-color: yellow;
 }
 
-.skills__title{
-    text-align: center;
-    // padding: 4rem 0rem;
-}
-
-.skills__title label{
+.skills__title {
+  text-align: center;
+  label {
     font-size: 3rem;
-    font-weight: 500;        
-    // background-color: red
-}
-
-.skills__title p{
+    font-weight: 500;
+  }
+  p {
     color: rgba($color: #000000, $alpha: 0.7);
+  }
 }
 
-.skills--section p{
-    margin: 0%
+.skills--section {
+  p {
+    margin: 0%;
+  }
 }
 
 // contains domains and  inside that skills
-.skills-container{
-    @include flex(initial, initial );    
-    width: 65vw;    
-    margin: auto;
-    margin-top: 5rem;    
-    // background-color: yellow;
+.skills-container {
+  @include flex(initial, initial);
+  gap: 2rem;
+  // width: 65vw;
+  margin: auto;
+  margin-top: 5rem;
+  // background-color: yellow;
 }
 
 // containing the the Technologies Components div
-.skills-container > div{    
-    width: 100%
+.skills-container > div {
+  width: 100%;
 }
 
 // domains container (icon, domain, arrow) -> frontend ,Backend etc.
-.domainSkill--title{
-    @include flex(space-between,center );    
-    margin: .4rem;    
-    font-size: 1.6rem;
-    font-weight: 600;    
-}
+.domainSkill--title {
+  @include flex(space-between, center);
+  
+  margin: 0.4rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-top: 2rem;
 
-.domainSkill--title > div{
-    @include flex(initial, center );
-}
-
-.domain--icon{
-    margin-right: 1rem;
-    font-size: 2.2rem;
-}
-
-.domainSkill--title:hover{    
+  > div {
+    @include flex(initial, center);
+  }
+  :hover {
     cursor: pointer;
+  }
 }
 
-// skills with the bars 
-.domain--skills--box{    
-    padding: 1rem 0.5rem 1rem 3rem;    
+.domain--icon {
+  margin-right: 1rem;
+  font-size: 2.2rem;
 }
 
-.bars--section{    
-    width: inherit;
-    font-size: 1.2rem;
-
-    p{
-        margin: 0%;
-    }
+// skills with the bars
+.domain--skills--box {
+  padding: 1rem 0.5rem 1rem 3rem;
 }
 
-.bars--section >  p{    
+.bars--section {
+  width: inherit;
+  font-size: 1.2rem;
+  > p {
     padding-top: 1.5rem;
-    padding-bottom: .5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  p {
+    margin: 0%;
+  }
+
+  > div {
+    background-color: rgba($color: $main--color, $alpha: 0.4);
+    width: inherit;
+    height: 0.45rem;
+  }
 }
 
-.bars--section > div{    
-        background-color: rgba($color: $main--color, $alpha: .4);
-        width: inherit;
-        height: .45rem;            
+
+@media all and (max-width:768px) {
+  .skills-container{
+    flex-wrap: wrap;    
+  }
 }

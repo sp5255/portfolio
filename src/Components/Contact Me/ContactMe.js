@@ -1,12 +1,12 @@
 import React from "react";
 import ContactCard from "./contactCard";
 import ContactForm from "./ContactForm";
-import '../../Assets/Styles/ContactMe/index.css'
+import '../../Assets/Styles/ContactMe/index.scss'
 
 class ContactMe extends React.Component {
     render() {        
         return (
-            <div data-aos="slide-right" className="contact--section" id="ContactMe">
+            <div data-aos="slide-right" className="contact--section section-container" id="ContactMe">
             <div className="title">
                 <label>Contact Me</label>
                 <span>Get in touch</span>
@@ -32,9 +32,9 @@ class ContactMe extends React.Component {
                         desc="Shamli, UP"
                     />
                 </div>
-                <div>
+                {/* <div> */}
                     <ContactForm />
-                </div>
+                {/* </div> */}
             </div>
 
             </div>

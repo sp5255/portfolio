@@ -5,175 +5,194 @@
 // $main--color: #7069e6;
 $main--color: #6256bf;
 
-
 @mixin flex($just, $align, $dir: row) {
-    display: flex;
-    flex-direction: $dir;
+  display: flex;
+  flex-direction: $dir;
 
-    @if ($dir == column) {
-        justify-content: $align;
-        align-items: $just;
-    } @else {
-        justify-content: $just;
-        align-items: $align;
-    }
+  @if ($dir == column) {
+    justify-content: $align;
+    align-items: $just;
+  } @else {
+    justify-content: $just;
+    align-items: $align;
+  }
 }
 
-.home--section {
-    @include flex(initial, initial);
-    height: 95vh;
-    width: 70vw;
-    margin: auto;
-    margin-top: 4rem
+#Home {
+  @include flex(initial, initial);
+  position: relative;
+  margin-top: 4rem;
+  // margin: auto;
+  // max-width: 80vw;
+}
+.content-mobile-view {
+  display: none;
 }
 
 .home__icons {
-    @include flex(center, center, column);
-    // background-color: red;
-    color: $main--color;
-    font-size: 2rem;
-    // padding: 2rem;
-    margin-right: 1rem;
+  @include flex(center, center, column);
+  // background-color: red;
+  color: $main--color;
+  font-size: 2rem;
+  margin-right: 1rem;
 
-    i,a {
-        margin: 1rem;
-    }
+  i,
+  a {
+    margin: 1rem 0rem;
+  }
 }
 
 // welcome message and about me
 .home__content {
-    @include flex(initial, space-around, column);
-    flex: 2;
-    padding: 0rem 5vw;
-    padding-top: 9rem;
-    padding-bottom: 7rem;    
+  @include flex(initial, space-around, column);
+
+  h1 {
+    font-size: 3rem;
+    height: fit-content;
+    // background-color: rebeccapurple;
+    margin-bottom: 0rem;
+  }
+
+  .content-header {
+    height: 9rem;
+  }
+  .position {
+    margin: 0%;
     // background-color: red;
+  }
 
-    h1 {
-        font-size: 3rem;
-        // height: 3rem  ;
-        height: fit-content;
-        // background-color: rebeccapurple;
-        margin-bottom: 0rem
-    }
-    
-    .position{
-        margin: 0%;
-        // background-color: red;
-    }
+  .about-me {
+    margin: 3rem 0rem;
+    line-height: 1.6rem;
+    font-size: 1.1rem;
+  }
 
-    .content__p {
-        margin: 3rem 0rem;
-        line-height: 1.6rem;
-        font-size: 1.1rem;
-    }
-}
-
-
-//button
-#Contact_me {
-    background-color: $main--color;
-    color: white;
-
-    display: flex;
-    align-items: center;
-
+  a {
+    text-decoration: none;
     width: fit-content;
-    padding: 1.2rem 1rem;
-    // margin-top: 5rem;
+  }
 
-    border: none;
-    outline: none;
+  .footer {
+    width: fit-content;
+    margin-top: 4rem;
 
-    font-size: 1.2rem;
-    border-radius: 0.3rem;
+    a {
+      @include flex(initial, center);
+      // background: yellow;
+      text-decoration: none;
+
+      color: initial;
+    }
+
+    a :hover {
+      cursor: pointer;
+    }
+
+    i {
+      font-size: 2rem;
+      color: $main--color;
+    }
 
     transition: all 0.2s;
 
-    i {
-        margin: 0rem 0.5rem;
+    > :hover {
+      transform: translateY(4px);
     }
+  }
 }
 
-#Contact_me:hover {
+//button
+#resume-btn {
+  background-color: $main--color;
+  color: white;
+
+  display: flex;
+  align-items: center;
+
+  width: fit-content;
+  padding: 1.2rem 1rem;
+  // margin-top: 5rem;
+
+  border: none;
+  outline: none;
+
+  font-size: 1.2rem;
+  border-radius: 0.3rem;
+
+  transition: all 0.2s;
+
+  i {
+    margin: 0rem 0.5rem;
+  }
+  > :hover {
     cursor: pointer;
     transform: translateY(2px);
+  }
 }
-
-
-.home__content .footer {
-    width: fit-content;    
-    margin-top: 4rem;     
-    
-    a {
-        @include flex(initial, center);
-        // background: yellow;        
-        text-decoration: none;            
-        
-        color: initial;        
-        
-    }
-
-    a :hover {        
-        cursor: pointer;     
-    }
-
-    i {
-        font-size: 2rem;   
-        color: $main--color;           
-    }
-
-    transition: all .2s;
-}
-
-
-.home__content .footer:hover{
-    transform: translateY(4px);
-}
-// welcome message and title
-.home__content > div:nth-child(1) {
-    height: 18rem; 
-    // background-color: red;
-}
-
-.home__content a{
-    text-decoration: none;
-    width: fit-content
-}
-
 
 //right photo container
 .home__profile {
-    @include flex(center,center  );
-    flex: 1;
-    position: relative;
-// background: blue; 
-    /* img {
-        // max-width: 60%;
-    } */
+  @include flex(center, center);
 }
 
-/* .home__profile > div {
-    // background: red; 
-    // position: relative;
-    // transform: translate(3rem, 10rem);
-    // background: url('../../images/blob.svg');
-    // background-repeat: no-repeat;
-    // background-position: center;
-    // @include flex(center, center );
-    // background-color: red;
-} */
-
-.profilePic {    
-    // max-height: 100%;    
-    height: 100%;
-    mask-image: url(../../images/blob.svg);
-    mask-repeat: no-repeat;
-    background-color: $main--color    ;
-    padding: 1.5rem;
-    width: 15rem;    
+// profile photo
+.profilePic {
+  height: 100%;
+  mask-image: url(../../images/blob.svg);
+  mask-repeat: no-repeat;
+  background-color: $main--color;
+  padding: 1.5rem;
+  width: 13rem;
+  margin-bottom: 4rem;
+  @media all and (max-width: 1024px) {
+    width: 20vw;
+  }
 }
 
-.dark--mode > .home--section label{
-    color: white;
+.dark--mode > .home--section label {
+  color: white;
+}
+
+@media all and (max-width: 600px) {
+  #Home {
+    justify-content: flex-start;
+    gap: 4rem;
+    margin-top: 2rem;
+
+    .content-container {
+      flex-direction: column-reverse;
+    }
+  }
+
+  .content-desktop-view {
+    display: none;
+  }
+
+  .content-mobile-view {
+    display: block;
+
+    .home__content{
+      height: 23rem ;
+    }
+    h1 {
+      margin-top: 0rem;
+    }
+    .content-header {
+      height: initial;
+    }
+
+    .about-me {
+      margin: 1rem 0rem;
+    }
+
+    .footer {
+      margin-top: 2rem;
+    }
+  }
+
+  .profilePic {
+    margin-bottom: initial;
+    width: 11rem;
+    margin-top: 4rem;
+  }
 }

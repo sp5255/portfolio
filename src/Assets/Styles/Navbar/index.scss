@@ -45,6 +45,13 @@ nav{
     li{
         display: inline;
         margin-right: 1.5rem;
+        @media all and (max-width:600px) {
+            display: none;
+            :nth-last-child(1){
+                display: block;
+            }            
+        }
+
     }
 
     li:hover{
@@ -60,8 +67,11 @@ nav{
         color: $main--color;        
     }
 
+   
+
 }
 .modes--icon {    
     font-size: 1.5rem;
     cursor: pointer;    
 }
+
