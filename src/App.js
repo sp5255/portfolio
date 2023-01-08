@@ -60,15 +60,7 @@ class App extends Component {
         <Portfolio />
         <ContactMe />
         <Footer name="Sachin Pundir" title="Software Engineer" />
-        {/* 
-                <div className="floating--top">
-                    <Link to ="Home"
-                    smooth = {true}
-                    spy = {true}
-                    duration = {400}>
-                        <i class="uil uil-top-arrow-from-top"></i>
-                    </Link>
-                </div> */}
+        <BottomNav />
       </div>
     );
   }

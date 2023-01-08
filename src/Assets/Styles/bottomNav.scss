@@ -1,19 +1,9 @@
-// .bottom-nav{
-//     // background: #6256bf;
-//     filter: drop-shadow(2px 4px 6px black);
-//     // color: white    ;
-//     position: fixed;
-//     bottom: 0rem;
-//     width: 20rem;
-//     // left: calc(25rem - 50%);
-//     right:25%;
-// }
 
-$primary-color:#6256bf;
+$primary-color: #6256bf;
 
 .navigation {
-  width: 400px;
-  height: 70px;
+  width: 425px;
+  height: 67px;
   background: $primary-color;
   display: flex;
   justify-content: center;
@@ -24,7 +14,7 @@ $primary-color:#6256bf;
   bottom: 0rem;
 
   // center a fixed div
-  left:50%;
+  left: 50%;
   transform: translateX(-50%);
 
   z-index: 100;
@@ -36,6 +26,10 @@ $primary-color:#6256bf;
     gap: 1rem;
     position: relative;
     padding: 0rem;
+  }
+
+  @media all and (min-width:600px) {
+    display: none;
   }
 }
 
@@ -53,6 +47,9 @@ $primary-color:#6256bf;
     text-align: center;
     align-items: center;
   }
+  :hover{
+    cursor: pointer;
+  }
 }
 
 .navigation ul li a {
@@ -64,6 +61,7 @@ $primary-color:#6256bf;
     text-align: center;
     transition: 0.5s;
     color: white;
+    margin-left: 4px;
     // color:yellow;
   }
 
@@ -79,7 +77,7 @@ $primary-color:#6256bf;
 
 .navigation ul li.active a {
   .icon {
-    transform: translateY(-33px);
+    transform: translateY(-39px);
   }
 
   .text {
@@ -121,3 +119,15 @@ $primary-color:#6256bf;
   border-top-left-radius: 20px;
   box-shadow: 0px -10px 0 0 white;
 }
+
+.dark--mode {
+  .navigation,
+  .indicator {
+    border-color: #1a1525;
+  }
+  .indicator::before,
+  .indicator::after {
+    box-shadow: 0px -10px 0 0 #1a1525 !important;
+  }
+}
+
